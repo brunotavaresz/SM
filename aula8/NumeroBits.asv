@@ -1,0 +1,7 @@
+function NumBits = NumeroBits(Texto)
+    [Simbolos, frequencia] = Alfabeto2(Texto);
+    L = length(Texto);
+    nsim = frequencia * L /100;
+    ar = 1: length(Simbolos);
+    NumBits = sum(ar .* nsim);
+
